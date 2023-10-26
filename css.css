@@ -1,0 +1,126 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    height: 100vh;
+    background: linear-gradient(to right, lightpink, #FFB49A)
+}
+main{
+    height: 35vh;
+    width: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: flex-start;
+    border-radius: 30px;
+}
+
+
+.uhrdiv{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+    height: 30%;
+    font-size: 60px;
+    border-radius: 30px;
+
+}
+
+.uhrdiv .zeiger:hover{
+    transform: scale(1.1);
+}
+.zeiger{
+    font-size: 200px;
+    background-color: rgba(245, 245, 245, 0.777);
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 0px 55px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 55px -6px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 55px -6px rgba(0,0,0,0.75);
+transition: all 0.4s ease;
+
+
+    /* animation: animationen 50s 0s infinite ease ; */
+
+}
+.uhrinfo h1{
+    color: black;
+}
+@keyframes animationen{
+    0% {
+        background-color: antiquewhite;
+    }
+    25% {
+        background-color: lightgray;
+
+    }
+    50% {
+        background-color: lightpink;
+
+    }
+    75% {
+        background-color: lightskyblue;
+
+    }
+    100% {
+        background-color: rgb(176, 159, 159);
+
+    }
+}
+.semicolon{
+    width: 30px;
+}
+.uhrinfo{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 30px;
+
+
+}
+
+button{
+    width: 15%;
+    height: 80px;
+    border-radius: 50px;
+    border: 1px solid black;
+    display: flex;
+    background: linear-gradient(to right, lightpink, #FFB49A);
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    -webkit-box-shadow: 0px 3px 22px -6px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 3px 22px -6px rgba(0,0,0,1);
+    box-shadow: 0px 3px 22px -6px rgba(0,0,0,1);
+    transition: all 1s ease;
+}
+button:hover{
+    background: none;
+    background-color: lightpink;
+
+
+}
+.timerdiv{
+    width: fit-content;
+    padding: 0px 40px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    border-radius: 35px;
+    transition: all 3s ease;
+    color: rgb(43, 38, 38);
+    background-color: rgb(114, 157, 171);
+    transform: scale(1.6);
+    margin-bottom: 200px;
+    margin-top: 100px;
+
+    
+}
